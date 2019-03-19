@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Example of CSS counter-increment property</title>
+    <style type="text/css">            
+		body {
+			counter-reset: section;
+		}
+		h1 {
+			counter-reset: category;
+		}
+		h1:before {
+			counter-increment: section;
+			content: "Section " counter(section) ". ";
+		}
+		h2:before {
+			counter-increment: category;
+			content: counter(section) "." counter(category) " ";
+		}  
+    </style>
+</head>
+<body>
+    <h1>Tutorials</h1>
+    <h2>HTML Tutorial</h2>
+    <h2>CSS Tutorial</h2>
+    <h1>References</h1>
+    <h2>HTML Tags</h2>
+    <h2>CSS Properties</h2>
+    <p><strong>Note:</strong> Internet Explorer 7 and earlier versions don't support the <code>counter-increment</code> property. IE8 supports this property only if a <code><!DOCTYPE></code> is specified.</p>
+</body>
+</html> 
+                                		

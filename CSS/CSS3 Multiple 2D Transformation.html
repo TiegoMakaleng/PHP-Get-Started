@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of CSS3 Multiple 2D Transformation</title>
+<style type="text/css">
+    img {
+		-webkit-transform: translate(200px, 50px) rotate(180deg) scale(1.5) skew(0, 30deg);  /* Chrome, Safari, Opera */
+		   -moz-transform: translate(200px, 50px) rotate(180deg) scale(1.5) skew(0, 30deg);  /* Firefox */
+			-ms-transform: translate(200px, 50px) rotate(180deg) scale(1.5) skew(0, 30deg);  /* IE 9 */
+				transform: translate(200px, 50px) rotate(180deg) scale(1.5) skew(0, 30deg);  /* Modern Browsers */    
+	}
+    .box{
+        margin: 50px;
+        width: 108px;
+        height: 136px;
+        background: url("../images/mushroom-transparent.png") no-repeat;
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+    	<img src="../images/mushroom.png" alt="Mushroom">
+    </div>
+</body>
+</html>                                		
